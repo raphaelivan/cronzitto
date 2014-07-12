@@ -3,22 +3,21 @@
   "version": "1.0.0",
   "description": "Cronzitto",
   "main": "./lib/index.js",
-
   "repository": {
     "type": "git",
     "url": "git://github.com/raphaelivan/cronzitto.git"
   },
-
   "keywords": [
     "cron",
     "timer"
   ],
   "author": "Raphael ivan <contato@raphaelivan.com.br>",
   "license": "MIT",
-
   "bugs": {
     "url": "https://github.com/raphaelivan/cronzitto/issues"
   },
-
-  "homepage": "https://github.com/raphaelivan/cronzitto"
+  "homepage": "https://github.com/raphaelivan/cronzitto",
+  "dependencies": {
+    "pretty-log": "^0.1.0"
+  }
 }

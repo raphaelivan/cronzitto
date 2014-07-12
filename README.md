@@ -2,7 +2,8 @@ Cronzitto
 ================================
 
 ## Usage
+var Cron = require('cronzitto');
 
-var Cron.watch(function() {
-  console.log("foo")
-}, 300);
+Cron.watch( function() {
+  console.log("Event");
+}, 5000);
