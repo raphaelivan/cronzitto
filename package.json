@@ -19,5 +19,10 @@
   "homepage": "https://github.com/raphaelivan/cronzitto",
   "dependencies": {
     "pretty-log": "^0.1.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1"
   }
 }
