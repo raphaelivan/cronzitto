@@ -2,8 +2,18 @@ Cronzitto
 ================================
 
 ## Usage
-var Cron = require('cronzitto');
+```js
+  var Cron = require('cronzitto');
+  var c = Cron.watch( function() {
+    // Mail.getAll();
+  }, 5000);
+```
 
-Cron.watch( function() {
-  console.log("Event");
-}, 5000);
+Stop event
+```js
+  c.stop();
+```
+
+Cron.once( function() {
+
+}, 1000);
