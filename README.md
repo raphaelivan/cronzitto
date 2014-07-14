@@ -14,6 +14,9 @@ Stop event
   c.stop();
 ```
 
+Only once
+```js
 Cron.once( function() {
-
+  # run after a second
 }, 1000);
+```
