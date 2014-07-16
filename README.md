@@ -40,5 +40,19 @@ Cron.once( function() {
 }, 1000);
 ```
 
+### Notify
+You can receive notifications when the task finishes or is stopped.
+
+**Requirements!**
+To use Growl notifications, you need to install [node-growl](https://github.com/visionmedia/node-growl#install).
+
+### Non-Notify
+To disable the notifications engine, set the Cronzitto:
+
+```js
+  Cron.config.notify = false;
+```
+
+
 ## License
 Cronzitto is available under the [MIT license](http://opensource.org/licenses/MIT).
