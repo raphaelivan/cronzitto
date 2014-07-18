@@ -53,6 +53,13 @@ To disable the notifications engine, set the Cronzitto:
   Cron.config.notify = false;
 ```
 
+### Non-Beep
+To disable the sound 'beep.mp3':
+
+```js
+  Cron.config.beep = false;
+```
+
 
 ## License
 Cronzitto is available under the [MIT license](http://opensource.org/licenses/MIT).
