@@ -2,6 +2,8 @@ Cronzitto
 ================================
 Cronzitto allows you to schedule tasks to run
 
+[![NPM](https://nodei.co/npm/cronzitto.png)](https://nodei.co/npm/cronzitto/)
+
 ## Install
 First of all, make sure you have [Node.js](http://nodejs.org/) installed.
 
