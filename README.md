@@ -33,6 +33,12 @@ To cancel a cronzitto event, use the stop method
   watchMail.stop();
 ```
 
+### Sleep
+Waiting time to continue execution(miliseconds)
+```js
+watchMail.sleep(50000);
+```
+
 ### Only once
 Perform a task only once after the end of the timer.
 
