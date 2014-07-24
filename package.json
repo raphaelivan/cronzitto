@@ -1,6 +1,6 @@
 {
   "name": "cronzitto",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Cronzitto allows you to schedule tasks to run.",
   "main": "./lib/index.js",
   "repository": {
