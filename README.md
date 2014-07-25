@@ -20,7 +20,7 @@ var Cron = require('cronzitto');
 ```js
   var watchMail = Cron.watch( function() {
     //Mail.getAll();
-  }, 5000);
+  }, '10 minutes');
 ```
 The watch method accepts two parameters: the callback and timer.
 
@@ -33,10 +33,15 @@ To cancel a cronzitto event, use the stop method
   watchMail.stop();
 ```
 
+### Reset Time
+```js
+  watchMail.resetTimer('30 minutes');
+```
+
 ### Sleep
 Waiting time to continue execution(miliseconds)
 ```js
-watchMail.sleep(50000);
+watchMail.sleep('5 minutes');
 ```
 
 ### Only once
@@ -45,7 +50,7 @@ Perform a task only once after the end of the timer.
 ```js
 Cron.once( function() {
   //run after a second
-}, 1000);
+}, '1 minute');
 ```
 
 ### Notify
