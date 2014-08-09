@@ -67,7 +67,7 @@ To disable the notifications engine, set the Cronzitto:
 ```
 
 ### Non-Beep
-To disable the sound 'beep.mp3':
+To disable the BEEP sound:
 
 ```js
   Cron.config.beep = false;
