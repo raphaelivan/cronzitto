@@ -24,11 +24,11 @@ var Cron = require('cronzitto');
 ```
 The watch method accepts two parameters: the callback and timer.
 
-### Stop event
+### Cancel event
 To cancel a cronzitto event, use the stop method
 
 ```js
-  watchMail.stop();
+  watchMail.cancel();
 ```
 
 ### Reset Time
