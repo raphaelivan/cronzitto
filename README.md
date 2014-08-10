@@ -24,8 +24,6 @@ var Cron = require('cronzitto');
 ```
 The watch method accepts two parameters: the callback and timer.
 
-**The timer must be in miliseconds**
-
 ### Stop event
 To cancel a cronzitto event, use the stop method
 
@@ -39,7 +37,7 @@ To cancel a cronzitto event, use the stop method
 ```
 
 ### Sleep
-Waiting time to continue execution(miliseconds)
+Waiting time to continue execution
 ```js
 watchMail.sleep('5 minutes');
 ```
