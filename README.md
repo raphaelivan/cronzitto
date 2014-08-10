@@ -24,8 +24,6 @@ var Cron = require('cronzitto');
 ```
 The watch method accepts two parameters: the callback and timer.
 
-**The timer must be in miliseconds**
-
 ### Stop event
 To cancel a cronzitto event, use the stop method
 
