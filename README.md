@@ -1,6 +1,6 @@
 Cronzitto
 ================================
-Cronzitto allows you to schedule tasks to run
+Cronzitto allows you to schedule tasks to run.
 
 [![NPM](https://nodei.co/npm/cronzitto.png)](https://nodei.co/npm/cronzitto/)
 
@@ -12,11 +12,13 @@ First of all, make sure you have [Node.js](http://nodejs.org/) installed.
 ```
 
 ## Usage
+Require cronzitto module
+
 ```js
 var Cron = require('cronzitto');
 ```
 
-### Run a task every time interval
+### Watch an event
 ```js
   var watchMail = Cron.watch( function() {
     //Mail.getAll();
@@ -24,31 +26,32 @@ var Cron = require('cronzitto');
 ```
 The watch method accepts two parameters: the callback and timer.
 
-### Cancel event
-To cancel a cronzitto event, use the stop method
+### Cancel an event
+To cancel a cronzitto event, use the cancel method
 
 ```js
   watchMail.cancel();
 ```
 
-### Reset Time
+### Reset an event time
+Reset the execution time.
+
 ```js
   watchMail.resetTimer('30 minutes');
 ```
 
 ### Sleep
-Waiting time to continue execution
+Wait a while to continue execution
 ```js
-watchMail.sleep('5 minutes');
+  watchMail.sleep('5 minutes');
 ```
 
-### Only once
-Perform a task only once after the end of the timer.
-
+### Execute only once
+Perform a task only once, after the end of the timer.
 ```js
-Cron.once( function() {
-  //run after a second
-}, '1 minute');
+  Cron.once( function() {
+    //run after a minute
+  }, '1 minute');
 ```
 
 ### Notify
@@ -70,7 +73,6 @@ To disable the BEEP sound:
 ```js
   Cron.config.beep = false;
 ```
-
 
 ## License
 Cronzitto is available under the [MIT license](http://opensource.org/licenses/MIT).
